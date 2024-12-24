@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# Guardian Shield: Advanced Application Firewall Frontend 🛡️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Smart India Hackathon 2024](https://img.shields.io/badge/Smart%20India%20Hackathon-2024-blue)](https://sih.gov.in/)
+[![ISRO](https://img.shields.io/badge/Organization-ISRO-orange)](https://www.isro.gov.in/)
 
-## Available Scripts
+## Project Overview 🚀
 
-In the project directory, you can run:
+Guardian Shield is a context-aware application firewall developed for the Smart India Hackathon 2024, where our team was among the top 48 finalists selected from over 1000+ teams. The project was showcased at the Grand Finale in Ahmedabad, hosted by ISRO (Indian Space Research Organisation).
 
-### `npm start`
+The frontend interface provides a robust, user-friendly dashboard for monitoring and controlling network traffic, managing endpoints, and implementing security policies in real-time.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Key Features ✨
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Real-time Network Monitoring**: Interactive graphs and visualizations for network traffic analysis
+- **Endpoint Management**: Comprehensive interface for managing and monitoring multiple endpoints
+- **Policy Configuration**: Intuitive policy creation and deployment system
+- **Alert Dashboard**: Real-time alert monitoring with detailed insights
+- **Activity Monitoring**: Visual representation of normal vs. abnormal activities
+- **DPI (Deep Packet Inspection)**: Advanced packet analysis and visualization
 
-### `npm test`
+## Technical Architecture 🏗️
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The project follows a distributed architecture with three main components:
 
-### `npm run build`
+1. **Frontend (This Repository)**: React-based web console for monitoring and control
+2. **Backend**: FastAPI-powered REST service for data processing and policy management
+3. **Agent**: Distributed monitoring system using Scapy and TensorFlow for network analysis
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack 💻
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Frontend Technologies
+- Tailwind CSS for responsive design
+- React.js for dynamic UI components
+- Chart.js for real-time data visualization
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Backend Integration
+- FastAPI for high-performance REST APIs
+- MongoDB Atlas for scalable data storage
+- AI/ML integration with TensorFlow
 
-### `npm run eject`
+## Screenshots 📸
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Login Page
+![Screenshot (376)](https://github.com/user-attachments/assets/5cc71552-d593-44bb-88b1-448c2ba5cc11)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Network Monitoring Dashboard
+Real-time anomaly detection and AI-powered threat response with live traffic graphs and automated blocking
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Picture1](https://github.com/user-attachments/assets/e9f4060f-7752-4017-9c8f-021da2b058b3)
+![Picture2](https://github.com/user-attachments/assets/e2afb683-7ffa-4cc9-adc3-14e2b1b1dc3e)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Application Management : 
+Displaying application activity details and an alert monitoring system with high-confidence normal activity detection.
 
-## Learn More
+![Picture3](https://github.com/user-attachments/assets/0b790bbb-d0c1-429d-b871-8a09c73db759)
+![Picture4](https://github.com/user-attachments/assets/3972a105-3493-475c-923f-b730e8c6e7bd)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Endpoint Management
+Centralized Endpoint Management system enabling admins to monitor, deploy policies, and manage applications with detailed endpoint insights
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Picture5](https://github.com/user-attachments/assets/06be4231-624b-4312-abc4-12591e9cae4f)
+![Picture6](https://github.com/user-attachments/assets/255f8a7c-26df-4fb9-88b6-93aa89e5dea1)
 
-### Code Splitting
+### Policy Management
+Policy Deployment: Enables admins to configure and deploy security policies by specifying IPs, ports, protocols, apps, and actions (block/unblock) for endpoint control.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Picture9](https://github.com/user-attachments/assets/3f4521bb-dc52-4cd0-ab05-eff14ccabd4f)
+![Screenshot (377)](https://github.com/user-attachments/assets/8e9b531c-83b4-475d-be90-29df1fbe07e0)
 
-### Analyzing the Bundle Size
+### DPI Management
+Application Monitoring: Shows real-time network usage, activity graphs, and app-specific alerts for endpoint monitoring (Deep Packet Inspection)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Picture7](https://github.com/user-attachments/assets/a1f16e8e-10b6-4cfd-bc14-888d7bb691a4)
+![Picture8](https://github.com/user-attachments/assets/22d41219-c11b-4d50-85a2-b710b21f3000)
 
-### Making a Progressive Web App
+## Related Repositories 🔗
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Backend Repository: [Guardian Shield Backend](https://github.com/artifcialmind/Context-Aware-Firewall-SIH-2024/tree/shiwans_backend_code)
 
-### Advanced Configuration
+## Team VAJRA 🤝
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Part of Team VAJRA's submission for Smart India Hackathon 2024, developed under the guidance of ISRO.
 
-### Deployment
+## Installation and Setup 🛠️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+# Clone the repository
+git clone https://github.com/atulkp018/Application_firewall_frontend.git
 
-### `npm run build` fails to minify
+# Navigate to project directory
+cd Application_firewall_frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+```
+
+## Contributing 🤲
+
+While this project was developed for the Smart India Hackathon, we welcome contributions and suggestions. Feel free to:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License 📄
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+*Developed with ❤️ by Team VAJRA for Smart India Hackathon 2024*
