@@ -1,0 +1,58 @@
+/* NetworkUsageChart.css */
+
+.chart-container {
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.usage{
+    width: 35%;
+    height: 35%;
+}
+
+.vd{
+    width: 25%;
+}
+
+/* Add hover effect for a more interactive feel */
+.chart-container:hover {
+    transform: translateY(-8px); /* Lift up effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+.chart-container h2 {
+    font-size: 24px; /* Increased font size */
+    color: #0e65bc; /* Darker, more modern text color */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600; /* Slightly bolder text */
+    letter-spacing: 1px; /* Slight spacing for readability */
+}
+
+.chart-container canvas {
+    max-width: 100%; /* Ensure canvas scales with container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Add responsive design for smaller screens */
+@media (max-width: 768px) {
+    .chart-container {
+        max-width: 90%; /* Adjusted max-width for smaller screens */
+        padding: 15px;
+        margin: 20px auto; /* Less margin on smaller screens */
+    }
+
+    .chart-container h2 {
+        font-size: 20px; /* Reduced font size on smaller screens */
+    }
+}

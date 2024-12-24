@@ -1,0 +1,63 @@
+/* src/styles/Endpoint-Table.css */
+.endpoint-table {
+  padding: 20px;
+  background-color: #1f1f1f;
+  color: #ddd;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #2a2a2a;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+th {
+  color: #ccc;
+  font-weight: bold;
+}
+
+td .status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Correct CSS for active and inactive statuses */
+.status.active {
+  color: #fff;
+  background-color: #4caf50; /* Green for active */
+}
+
+.status.inactive {
+  color: #fff;
+  background-color: #f44336; /* Red for inactive */
+}
+
+button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #666;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(1px);
+}

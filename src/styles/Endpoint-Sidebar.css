@@ -1,0 +1,57 @@
+/* src/styles/Endpoint-Sidebar.css */
+.endpoint-sidebar {
+  width: 220px;
+  height: 100vh;
+  background-color: #121212;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.sidebar-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #ddd;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.sidebar-nav li:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+.status-indicators {
+  margin-top: 20px;
+}
+
+.status-title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.status-item {
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.status-item.active {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.status-item.offline {
+  background-color: #f44336;
+  color: #fff;
+}

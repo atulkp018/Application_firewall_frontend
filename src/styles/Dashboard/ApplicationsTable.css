@@ -1,0 +1,117 @@
+/* src/components/ApplicationsTable.css */
+
+.applications-table-container {
+  overflow-x: auto; /* Scrollable if needed */
+  margin-top: 40px; /* Space above the table */
+  padding: 0 15px; /* Add padding for better spacing */
+}
+
+.applications-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f3f7fa; /* Soft, cool background for the table */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+  border-radius: 12px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow of rounded corners */
+  margin-bottom: 20px; /* Space below the table */
+}
+
+.applications-table th,
+.applications-table td {
+  padding: 14px; /* Spacing for table cells */
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0; /* Light border for cells */
+}
+
+.applications-table th {
+  background-color: #2e8bc0; /* Soft blue for the header background */
+  color: #ffffff; /* White text color */
+  font-weight: bold;
+  text-transform: uppercase; /* Uppercase text for the header */
+  letter-spacing: 0.05em; /* Slight letter spacing for readability */
+  position: sticky; /* Makes the header sticky */
+  top: 0; /* Position for sticky effect */
+  z-index: 1; /* Ensure the header stays on top */
+}
+
+.applications-table tr:nth-child(even) {
+  background-color: #d9ecf2; /* Light pastel blue for alternating row colors */
+}
+
+.applications-table tr:nth-child(odd) {
+  background-color: #eef5f9; /* Very light blue for alternating row colors */
+}
+
+.applications-table tr:hover {
+  background-color: #b8dcef; /* Slightly darker cyan for hover effect */
+  cursor: pointer; /* Pointer cursor to indicate interactivity */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.applications-table td {
+  color: #34495e; /* Darker text for content */
+}
+
+.btn {
+  padding: 10px 20px; /* Adjust padding for better button size */
+  border: none;
+  border-radius: 25px; /* More rounded buttons */
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase; /* Uppercase text for consistency */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.btn-details {
+  background-color: #45a29e; /* Teal for 'View Details' */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a 3D effect */
+  margin-right: 10px; /* Space between buttons */
+}
+
+.btn-policy {
+  background-color: #ff7675; /* Coral pink for 'Apply Policy' */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a 3D effect */
+}
+
+.btn-details:hover {
+  background-color: #37837d; /* Darker teal on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.btn-policy:hover {
+  background-color: #e55039; /* Darker coral on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.btn-details:active, .btn-policy:active {
+  transform: scale(0.95); /* Slightly smaller when clicked */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow when clicked */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align items for consistent spacing */
+  margin-top: 20px;
+  gap: 10px; /* Space between pagination buttons */
+}
+
+.page-button {
+  padding: 8px 16px; /* Consistent padding */
+  border: 1px solid #ddd;
+  border-radius: 20px; /* Rounded corners for buttons */
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.page-button.active {
+  background-color: #2e8bc0; /* Soft blue for the active page */
+  color: #ffffff;
+}
+
+.page-button:hover {
+  background-color: #a9cce3; /* Lighter hover effect */
+}

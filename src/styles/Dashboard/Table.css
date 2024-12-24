@@ -1,0 +1,43 @@
+/* src/pages_css/Dashboard/Table.css */
+.server-table-container {
+  
+  margin-top: 1px; /* Add some spacing from other elements */
+  height: 55%;
+}
+
+.server-table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  background-color: transparent; /* Light background for contrast */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+  border-radius: 8px; /* Rounded corners */
+  overflow: visible; /* Ensure rounded corners */
+}
+
+.server-table th, .server-table td {
+  padding: 16px; /* Increased padding for a modern look */
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0; /* Light gray border for subtle separation */
+}
+
+.server-table th {
+  background-color: #007bff; /* Modern blue color */
+  color: #ffffff; /* White text for contrast */
+  font-weight: 600;
+  text-transform: uppercase; /* Uppercase for a modern style */
+}
+
+.server-table td {
+  color: #E6E6E6; /* Dark gray text for better readability */
+}
+
+.server-table tr:hover {
+  background-color: #b9e038; /* Soft blue hover effect */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.server-table .usage-cell {
+  font-weight: bold;
+  color: #28a745; /* Vivid green color for usage values */
+}

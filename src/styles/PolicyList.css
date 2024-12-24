@@ -1,0 +1,288 @@
+/* src/styles/PolicyList.css */
+
+.p-head {
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  color: #2c3e50;
+  transition: color 0.5s, transform 0.3s, width 0.3s;
+
+  /* 1. Glow Effect */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+/* 2. Gradient Text */
+.p-head {
+  background: linear-gradient(45deg, #ff6b81, #f7b731, #48c9b0);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* 3. Hover Underline with Animation */
+.p-head::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ff6b81;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s;
+}
+
+.p-head:hover::after {
+  width: 100%;
+}
+
+/* 4. Text with Shadow and Background */
+.p-head {
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+/* 5. Bounce Animation */
+.p-head {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* 6. Text Strikethrough with Hover */
+.p-head::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #ff6b81;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.p-head:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* 7. 3D Text Effect */
+.p-head {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 8. Animated Color Change */
+.p-head:hover {
+  color: #8e44ad;
+}
+
+/* 9. Text With a Border */
+.p-head {
+  padding: 5px 10px;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+}
+
+/* 10. Typing Effect */
+.p-head {
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #3498db;
+  width: 0;
+  animation: typing 3s steps(10) 1s forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+
+/*--------------*/
+.policy-list {
+  padding: 20px;
+  background: linear-gradient(145deg, #f1f5f8, #d6e1e8); /* Light gradient background */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Softer, larger shadow for depth */
+  width: 100%; /* Full width */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove any margins */
+  overflow: auto; /* Ensure content is scrollable if necessary */
+}
+
+
+.policy-list h2 {
+  margin-bottom: 25px;
+  color: #333; /* Dark text for better readability */
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.policy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f0f4f8; /* Light background for header */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.policy-header span {
+  font-size: 22px;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.policy-header button {
+  padding: 12px 20px;
+  background-color:darkorange;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.policy-header button:hover {
+  transform: translateY(-2px); /* Slight lifting effect */
+}
+
+.global-filter {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.global-filter input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 250px;
+}
+
+.global-filter input:focus {
+  border-color: #4caf50; /* Highlight on focus */
+}
+
+
+.policy-list table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.policy-list th,
+.policy-list td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  color: #1a1a1a;
+  font-style:bold;
+  font-size: 16px;
+}
+
+
+.policy-list th {
+  background-color: lightcoral;
+  color: #333;
+  font-weight: bold;
+}
+
+.policy-list tr:hover {
+  background-color: #f9f9f9;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+.view-btn,
+.delete-btn {
+  padding: 10px 18px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.view-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.view-btn:hover {
+  background-color: #45a049;
+  transform: translateY(-2px); /* Slight lifting effect */
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+  transform: translateY(-2px); /* Slight lifting effect */
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.pagination select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+.pagination select:focus {
+  border-color: #007bff; /* Highlight on focus */
+}

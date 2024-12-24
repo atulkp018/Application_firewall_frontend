@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+/* Base styles */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+.endpoint-details-container {
+  padding: 30px;
+  width: 90%;
+  max-width: 1200px;
+  min-height: 60vh;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.endpoint-details-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #c8d5e1 0%, #ff0301 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.endpoint-details-container h1:hover {
+  transform: scale(1.05);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgba(187, 134, 252, 0.3);
+  padding-bottom: 15px;
+}
+
+.back-button {
+  background: linear-gradient(to right, #6200ea, #3700b3);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(98, 0, 234, 0.2);
+}
+
+.back-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(98, 0, 234, 0.3);
+}
+
+/* Main Content Styles */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.overview {
+  background: ;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.overview-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.applications,
+.policies {
+  width: 48%;
+  background: rgba(248, 249, 250, 0.05);
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.applications:hover,
+.policies:hover {
+  transform: translateX(10px);
+  background: rgba(248, 249, 250, 0.08);
+}
+
+h2 {
+  color: #acf717;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h3 {
+  color: #bb86fc;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(187, 134, 252, 0.3);
+  padding-bottom: 8px;
+}
+
+.info-section {
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(248, 249, 250, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.info-section:hover {
+  transform: translateX(10px);
+  background: rgba(248, 249, 250, 0.08);
+}
+
+.info-section p {
+  
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Recent Alerts Section */
+.recent-alerts {
+  background: rgba(51, 51, 51, 0.7);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+.recent-alerts h2 {
+  margin-top: 0;
+}
+
+/* Policy Deployment Section */
+.policy-deployment {
+  text-align: center;
+  padding: 30px;
+  background: rgba(51, 51, 51, 0.7);
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.deploy-policy-button {
+  background: linear-gradient(to right, #03dac6, #018786);
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(3, 218, 198, 0.2);
+}
+
+.deploy-policy-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(3, 218, 198, 0.3);
+}
+
+/* Description Section */
+.description {
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(248, 249, 250, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.description:hover {
+  transform: translateX(10px);
+  background: rgba(248, 249, 250, 0.08);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .endpoint-details-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .overview-content {
+    flex-direction: column;
+  }
+
+  .applications,
+  .policies {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .endpoint-details-container h1 {
+    font-size: 2rem;
+  }
+
+  .back-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

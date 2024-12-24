@@ -1,0 +1,67 @@
+.network-traffic-box {
+  max-width: 100%; /* Ensure the box is responsive */
+  width: 100%; /* Full width */
+  height: 300px; /* Automatically adjust height based on content */
+  background-color: #deebf5; /* Match background color of .box */
+  border: 2px solid #2c3e50; /* Same border color as .box */
+  border-radius: 7px; /* Same border radius as .box */
+  position: absolute;
+  top: 335px;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  padding-left: 8px; /* Padding for spacing inside the box */
+  padding-right: 8px;
+  padding-bottom: 50px;
+  color: #ffffff; /* White text color for contrast */
+  font-size: 18px; /* Same font size as .box */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Match shadow of .box */
+  text-align: center; /* Center text inside the box */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  margin-bottom: 20px; /* Space below the box */
+}
+
+.network-traffic-box:hover {
+  transform: translateY(-10px); /* Move the box up by 10 pixels */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for lifted effect */
+}
+
+.network-traffic-box h2 {
+  color: #e67e22; /* Bright orange color for headings */
+  margin-bottom: 20px; /* Add space below the heading */
+  position: absolute;
+  top: -10px;
+  
+}
+
+.network-traffic-box .chart-container {
+  position: relative;
+  
+  height: 300px; /* Increase height for the chart */
+  width: 100%; /* Full width */
+}
+
+/* Responsive Design */
+@media (min-width: 360px)  and (max-width: 700px) {
+  .network-traffic-box {
+    padding: 15px;
+    padding-bottom: 25px;
+    height: 200px;
+    width: 280px;
+    position: relative;
+    left: -4px;
+    top: 0px;
+  }
+
+  .network-traffic-box h2 {
+      font-size: 20px; /* Adjust font size for smaller screens */
+      margin-bottom: 15px; /* Reduce space below the heading on smaller screens */
+  }
+
+  .network-traffic-box .chart-container {
+      height: 250px; /* Adjust chart height for smaller screens */
+  }
+}
+
+

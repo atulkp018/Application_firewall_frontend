@@ -1,0 +1,83 @@
+/* General container styles */
+.alert-table-container {
+  padding: 20px;
+  margin-top: 40px; /* Space above the table */
+}
+
+/* Table title styling */
+.alert-table-container h2 {
+  color: #ec0e0ed3; /* Adjusted color to match the title color */
+  font-size: 24px; /* Larger font size for the title */
+  font-weight: bold; /* Bold title text */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+/* Table styles */
+.alert-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f3f7fa; /* Matching background color */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
+  border-radius: 12px; /* Rounded corners to match other table */
+  overflow: hidden; /* To apply border-radius properly */
+  margin-bottom: 20px; /* Space below the table */
+}
+
+/* Table heading styles */
+.alert-table thead {
+  background-color: #2e8bc0; /* Matching header background color */
+  color: #ffffff; /* White text color for contrast */
+  font-weight: bold; /* Bold text for headers */
+  text-transform: uppercase; /* Uppercase text for consistency */
+}
+
+/* Header cell styles */
+.alert-table th {
+  padding: 14px; /* Padding for header cells */
+  font-size: 16px; /* Larger font size for headers */
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0; /* Light border for cells */
+  color: white(6, 113, 140);
+  background-color: #2e8bc0;
+}
+
+/* Data cell styles */
+.alert-table td {
+  padding: 14px; /* Consistent padding for data cells */
+  color: #34495e; /* Darker text color for data */
+  font-size: 14px; /* Standard font size for table data */
+  border-bottom: 1px solid #e0e0e0; /* Light border for cells */
+}
+
+/* Alternating row colors */
+.alert-table tr:nth-child(even) {
+  background-color: #d9ecf2; /* Light pastel blue for alternating rows */
+}
+
+.alert-table tr:nth-child(odd) {
+  background-color: #eef5f9; /* Very light blue for odd rows */
+}
+
+/* Button styles */
+.alert-table button {
+  background-color: #45a29e; /* Teal for 'View Details' */
+  color: #ffffff; /* White text color */
+  border: none;
+  padding: 10px 20px; /* Adjusted padding to match other buttons */
+  border-radius: 25px; /* Rounded corners for buttons */
+  font-size: 16px; /* Consistent font size */
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase; /* Uppercase text for consistency */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.alert-table button:hover {
+  background-color: #37837d; /* Darker teal on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.alert-table button:active {
+  transform: scale(0.95); /* Slightly smaller when clicked */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow when clicked */
+}

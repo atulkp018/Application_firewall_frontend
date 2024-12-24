@@ -1,0 +1,48 @@
+/* Global Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  body {
+    background-color: #003366; /* Dark blue background color */
+    color: #ffffff; /* Optional: Set text color to white for contrast */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Optional: Set a consistent font */
+  }
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Banner Navbar Container */
+.banner-navbar-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-container {
+  width: 100%; /* Full width of the screen */
+  text-align: center;
+  background-color: #002147; /* Dark blue background */
+  padding: 0; /* Remove padding */
+  overflow: hidden; /* Hide any overflow from the image */
+}
+
+.banner-image {
+  display: block; /* Remove inline spacing issues */
+  width: 100%; /* Make image responsive to the container width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+}
+
+

@@ -1,0 +1,127 @@
+/* Container for the Comparison Chart */
+.comparison-chart-container {
+  width: 140%; /* Container width */
+  height: auto; /* Container height */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 1000;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Title for the Comparison Chart */
+.comparison-chart-container h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Canvas styling */
+.comparison-chart-container canvas {
+  width: 100% !important;  /* Specific width for the canvas */
+  height: 230px !important; /* Specific height for the canvas */
+  box-sizing: border-box; /* Ensure proper box-sizing */
+  display: block; /* Block display for canvas */
+  margin: 0 auto; /* Center the canvas horizontally */
+}
+
+/* Modern Button Styling */
+.comparison-chart-container button {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c); /* Gradient background */
+  border: none;
+  border-radius: 30px; /* Rounded corners for a pill shape */
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 12px 24px; /* Padding for button size */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Modern shadow for depth */
+  position: relative; /* To position pseudo-elements */
+  overflow: hidden; /* Ensure pseudo-elements don't overflow */
+}
+
+/* Button hover effect */
+.comparison-chart-container button:hover {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b); /* Inverted gradient on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Button active effect */
+.comparison-chart-container button:active {
+  background: linear-gradient(45deg, #e63946, #f1faee); /* Different gradient on active */
+  transform: scale(0.95); /* Slight shrink effect */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow on active */
+}
+
+/* Pulse effect for button when paused */
+.comparison-chart-container button.paused::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 0, 0, 0.3); /* Semi-transparent red */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse 1.5s infinite;
+  z-index: 0; /* Behind the button text */
+}
+
+/* Button text styling */
+.comparison-chart-container button span {
+  position: relative;
+  z-index: 1; /* Above the pulse effect */
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white; /* White text */
+  background-color: red; /* Light gray background */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+
+/* Resume button styles */
+.button-resume {
+  background-color: #3498db; /* Blue background */
+}
+
+.button-resume:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Pause button styles */
+.button-pause {
+  background-color: #e74c3c; /* Red background */
+}
+
+.button-pause:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Pulse animation keyframes */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

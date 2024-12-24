@@ -1,0 +1,273 @@
+
+
+
+/* Styling for the dashboard container */
+.dashboard-container {
+  display: flex;
+  flex-wrap: nowrap; /* Allows wrapping for responsiveness */
+  justify-content: flex-start; /* Align boxes to the left */
+  gap: 20px; /* Space between boxes */
+}
+
+.box {
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+  background-color: #deebf5;
+  background-color: transparent;
+
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 25px;
+  box-sizing: border-box;
+}
+
+/* Corrected styling for .box-canvas */
+.box-canvas {
+  display: block;
+  box-sizing: border-box;
+  height: 278px !important; /* Important to override other styles if needed */
+  width: 556px !important;  /* Important to override other styles if needed */
+  margin: 0 auto; /* Center the canvas horizontally if needed */
+}
+
+
+/* Styling for the heading in the box */
+.box h1 {
+  color: #e67e22; /* Bright orange color for the heading */
+  font-size: 24px; /* Larger font size for the heading */
+  margin-bottom: 10px; /* Reduce space below the heading */
+  font-weight: 600; /* Semi-bold heading for emphasis */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the graph container */
+.graph-container {
+  width: 100%;
+  height: 75%; /* Increase the height of the graph container */
+  padding: 10px;
+  box-sizing: border-box;
+  overflow:visible; /* Hide overflow to keep the layout tidy */
+}
+
+/* Wrapper for the graph to ensure it fits within the container */
+.graph-wrapper {
+  width: 100%;
+  height: 100%; /* Full height of the graph container */
+}
+
+/* Ensure the canvas scales properly */
+.graph-wrapper canvas {
+  width: 100% !important; /* Force canvas to scale with the container */
+  height: 100% !important; /* Force canvas to scale with the container */
+}
+
+/* Styling for statistics box */
+.statistics-box {
+  width: 22%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 20px;
+  flex-wrap: nowrap;
+  border-radius: 8px;
+  color: #ffffff; /* Text color for contrast */
+}
+
+
+
+
+/* General styling for each statistic item */
+.statistic-item {
+  background-color: #ffffff; /* Light background for contrast */
+  color: #333; /* Dark text color for readability */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align content */
+  justify-content: center;
+  
+  min-height: 10px; /* Minimum height for each item */
+  max-height: 75px; /* Maximum height for each item */
+  width: 152px; /* Full width for each item */
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Specific styling for fixed-size statistic items */
+.statistic-item.fixed-size-1 {
+  width: 100%;
+  height: 30%;
+  margin-left: auto;
+}
+
+
+.statistic-item.fixed-size-2 {
+  width: 100%;
+  height: 30%;
+  margin-right: auto;
+  
+}
+
+.statistic-item.fixed-size-3 {
+  width: 100%;
+  height: 30%;
+  margin-right: auto;
+  
+}
+
+.statistic-item.fixed-size-4 {
+  width: 100%;
+  height: 30%;
+  margin-right: auto;
+  
+}
+
+/* Common button styles */
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white; /* White text */
+  background-color: red; /* Light gray background */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+
+/* Resume button styles */
+.button-resume {
+  background-color: #3498db; /* Blue background */
+}
+
+.button-resume:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Pause button styles */
+.button-pause {
+  background-color: #e74c3c; /* Red background */
+}
+
+.button-pause:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+
+
+/* App.css or Dashboard.css */
+.grid-container {
+  display: grid;
+  height: 350px;        
+  grid-template-columns: repeat(3, 0.5fr); /* 3 equal columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows with automatic height */
+  gap: 1rem; /* Optional: Adds space between grid items */
+  padding-top: 130px;
+  padding-left: 0px;
+}
+
+
+
+.statistic-item {
+  background-color: #f0f0f0; /* Light background for visibility */
+  padding: 1rem; /* Optional: Adds space inside each item */
+  border-radius: 0.5rem; /* Rounded corners */
+  text-align: center; /* Center text */
+}
+
+.total-servers{
+  grid-column: 2 / 3; /* First column */
+  grid-row: 1 / 2;    /* First row */
+}
+
+.total-endpoints {
+  grid-column: 1 / 2; /* Middle column */
+  grid-row: 2 / 3;    /* First row */
+}
+
+.active-endpoints {
+  grid-column: 2 / 3; /* First column */
+  grid-row: 2 / 3;    /* Second row */
+}
+
+.offline-endpoints {
+  grid-column: 3 / 4; /* Second column */
+  grid-row: 2 / 3;    /* Second row */
+}
+
+/* Optional: Additional item for the third column in the second row */
+.additional-item {
+  grid-column: 3 / 4; /* Third column */
+  grid-row: 2 / 3;    /* Second row */
+}
+
+
+
+
+
+
+/* Heading styling */
+.statistic-item h3 {
+  color: #003366; /* Dark color for headings */
+  margin-bottom: 5px;
+}
+
+/* Paragraph styling */
+.statistic-item p {
+  font-size: 18px; /* Slightly larger font size for readability */
+  margin: 0;
+}
+
+.pause-resume-button {
+  background: linear-gradient(45deg, #007BFF, #0056b3); /* Gradient background */
+  color: #ffffff; /* White text color */
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  padding: 12px 24px; /* Padding for a larger button */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.pause-resume-button:hover {
+  background: linear-gradient(45deg, #0056b3, #007BFF); /* Reverse gradient on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.pause-resume-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Blue outline on focus */
+}
+
+
+
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .box {
+    width: 100%;
+    height: auto; /* Adjust height for smaller screens */
+  }
+  
+  .box h1 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+  
+  .graph-container {
+    height: 50%; /* Adjust graph container height for smaller screens */
+  }
+}

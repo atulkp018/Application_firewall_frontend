@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* Existing styles */
+.endpoint-management-container {
+  @apply p-8 w-11/12 mx-auto;
+  background-color: #1e1e2f;
+  min-height: 100vh;
+}
+
+.header {
+  @apply flex justify-between items-center mb-8;
+}
+
+.header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #272a2e 0%, #3498db 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.header h1:hover {
+  transform: scale(1.05);
+}
+
+.table-container {
+  @apply rounded-xl shadow-lg p-6 w-full;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.search-container {
+  @apply relative mb-6;
+}
+
+.search-input {
+  @apply w-full py-3 px-12 rounded-lg text-base transition-all duration-300;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.search-input:focus {
+  @apply outline-none;
+  border-color: #F95F0F;
+  box-shadow: 0 0 0 3px rgba(249, 95, 15, 0.1);
+}
+
+.endpoint-table {
+  @apply w-full border-separate;
+  border-spacing: 0;
+}
+
+.endpoint-table th {
+  @apply py-4 px-6 text-left font-semibold sticky top-0 z-10;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #F95F0F;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.endpoint-table tr:nth-child(odd) {
+  background-color: #FCF5D7;
+}
+
+.endpoint-table tr:nth-child(even) {
+  background-color: #f0f8f1;
+}
+
+.endpoint-table td {
+  @apply py-4 px-6;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: black;
+}
+
+.endpoint-table tr:hover {
+  background-color: #f4bbdf !important;
+  transition: background-color 0.3s ease;
+}
+
+.action-button {
+  @apply px-4 py-2 rounded transition-all duration-300;
+}
+
+.view-button {
+  @apply action-button mr-2;
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  color: white;
+}
+
+.deploy-button {
+  @apply action-button;
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+  color: white;
+}
+
+.pagination {
+  @apply mt-6 flex items-center justify-between;
+}
+
+.pagination-button {
+  @apply px-3 py-1 rounded transition-all duration-300;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #3b281e;
+}
+
+.pagination-info {
+  @apply mx-4 text-white font-semibold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.page-size-select {
+  @apply py-1 px-2 rounded;
+  background-color: rgba(47, 2, 228, 0.742);
+  color: #ffffff;
+  border: 1px solid rgba(220, 237, 238, 0.2);
+}
+
+/* New Loader Animation Styles */
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shimmer {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes ellipsis {
+  0% { content: '.'; }
+  33% { content: '..'; }
+  66% { content: '...'; }
+  100% { content: ''; }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
+.animate-ellipsis::after {
+  content: '';
+  animation: ellipsis 1.5s infinite steps(4);
+}
